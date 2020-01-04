@@ -3,21 +3,21 @@
 
 int countAndSort(int in_array[], int max_num, int size)
 {
-    int temp_array[max_num + 1], out_array[size], i, j, k;
+    int temp_array[max_num + 1], out_array[size], index, i, j;
     
     for(i = 0; i <= max_num; i++)
         temp_array[i] = 0;
     
     for(i = 0; i <= size; i++)
-        temp_array[in_array[i]] += 1;
+        temp_array[in_array[i]]++;
     
-    k=0;
+    index = 0;
     for(j = 0; j <= max_num; j++)
     {
         for(i = 0; i < temp_array[j]; i++)
         {
             out_array[k] = j;
-            k++;
+	    index++;
         }
     }
     

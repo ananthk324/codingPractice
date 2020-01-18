@@ -14,7 +14,7 @@ void Insert(int data,int n)
    struct Node* temp1 = (struct Node*)malloc(sizeof(temp1));
    temp1->data = data;
    temp1->next = NULL;
-   if(n==1)
+   if(n == 1)
    {
        temp1->next = head;
        head = temp1;
@@ -22,7 +22,7 @@ void Insert(int data,int n)
    }
    
    struct Node* temp2 = head;
-   for(int i = 0;i<n-2;i++)
+   for(int i = 0; i<n-2; i++)
    {
    temp2 = temp2->next;
    }
@@ -47,5 +47,5 @@ int main()
     Insert(2,1);
     Insert(3,2);
     Print();
-	return 0;
+    return 0;
 }

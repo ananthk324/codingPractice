@@ -1,4 +1,4 @@
-#Count and Sort implementation in C
+// Count and Sort implementation in C
 #include <stdio.h>
 #include <stdlib.h>
 

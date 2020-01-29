@@ -47,31 +47,33 @@ void InsertAtTail(int x)
 	newNode->prev = temp;
 }
 
-void Print() {
+void Print() 
+{
 	struct Node* temp = head;
 	printf("Forward: ");
+	printf("\n");
 	while(temp != NULL) 
 	{
 		printf("%d ",temp->data);
 		temp = temp->next;
 	}
-	printf("\n");
 }
 
 void ReversePrint() {
 	struct Node* temp = head;
 	if(temp == NULL) return;
 	
-	while(temp->next != NULL) {
+	while(temp->next != NULL) 
+	{
 		temp = temp->next;
 	}
 	
-	printf("Reverse: ");
-	while(temp != NULL) {
+	printf("\nReverse: ");
+	while(temp != NULL) 
+	{
 		printf("%d ",temp->data);
 		temp = temp->prev;
 	}
-	printf("\n");
 }
 
 int main() 

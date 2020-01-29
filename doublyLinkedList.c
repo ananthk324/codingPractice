@@ -59,7 +59,8 @@ void Print()
 	}
 }
 
-void ReversePrint() {
+void ReversePrint() 
+{
 	struct Node* temp = head;
 	if(temp == NULL) return;
 	
